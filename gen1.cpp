@@ -10,12 +10,14 @@ gen1::gen1(){
 }
 gen1::gen1(int len){
 	cout << "Konstruktor ";
-	length = 0;
+	length = len; 
 	s = 0;
 	a = 0;
 	b = 0;
 	z = 0;
-	resize(len);
+	int* tablica;
+	tablica = new int[len];
+	tab = tablica;
 }
 gen1::~gen1(){
 	remove();
@@ -23,11 +25,11 @@ gen1::~gen1(){
 void gen1::generate(int ile){
 	cout << "generator ";
 	srand(s);
-	for (int i = 0; i < length - 1; i++){
+	for (int i = 0; i < length; i++){
 		tab[i] = (rand() % ile);
 	}
 }
-void gen1::resize(int len){
+/*void gen1::resize(int len){
 	cout << "resize ";
 	if (len != length){
 		//remove();
@@ -36,7 +38,7 @@ void gen1::resize(int len){
 		tab = tablica;
 	}
 	else cout << "Zjeba³aœ";
-}
+}*/
 void gen1::remove(){
 	cout << "remove ";
 	delete[] tab;
@@ -54,7 +56,7 @@ void gen1::range(int _a, int _b){
 void gen1::other(){}
 void gen1::show(){
 	cout << "show ";
-	for (int i = 0; i < length - 1; i++){
+	for (int i = 0; i < length; i++){
 		cout << tab[i] << "  ";
 	}
 }
