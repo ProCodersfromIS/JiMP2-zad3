@@ -12,6 +12,7 @@ public:
 	~gen1();
 	void generate(int);
 	void resize(int);
+	void remove();
 	void seed(int);
 	void range(int, int);
 	void other();
