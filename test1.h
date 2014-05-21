@@ -1,3 +1,10 @@
+/**
+* \file test.h
+* \author Beata Gie³baga & Kamil Dawidów
+* \date 21.05.2014
+* \brief Plik zawiera deklaracjê klasy test1
+*/
+
 #ifndef TEST1_H
 #define TEST1_H
 

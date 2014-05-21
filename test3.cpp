@@ -7,6 +7,20 @@
 using namespace std;
 //------------------------------------------------
 
+test3::test3()
+{
+    genptr = nullptr;
+    numofvals = 0;
+}
+// -----------------------------------------------
+
+test3::test3(genM* _genptr, int _numofvals)
+{
+    genptr = _genptr;
+    numofvals = _numofvals;
+}
+// -----------------------------------------------
+
 void test3::startTest()
 {
 

@@ -1,5 +1,5 @@
 /**
-* \file aghTest.h
+* \file test.h
 * \author Beata Gie³baga & Kamil Dawidów
 * \date 21.05.2014
 * \brief Plik zawiera deklaracjê klasy abstrakcyjnej test
