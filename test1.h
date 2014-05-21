@@ -5,6 +5,9 @@
 
 class test1 : public test
 {
+private:
+    int zeroes; ///< Iloœæ liczb podzielnych przez 2
+    int ones; ///< Iloœæ liczb niepodzielnych przez 2
 public:
     // \brief Metoda czysto wirtualna uruchamiaj¹ca test
     void startTest();
