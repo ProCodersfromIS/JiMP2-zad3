@@ -1,23 +1,26 @@
 #ifndef GEN1_H
 #define GEN1_H
 #include "genM.h"
+#include <iostream>
+using namespace std;
 
 class gen1 : public genM {
-	int length;
-	int* tab;
-	int a, b, s, z;
+	int b, e, s;
+	int val;
 public:
 	gen1();
-	gen1(int);
+	gen1(int,int,int);
 	~gen1();
-	void generate(int);
-	//void resize(int);
-	void remove();
+	void generate();
+	int getval();
 	void seed(int);
-	void range(int, int);
-	void other();
-	void show();
-
+	int getseed();
+	void begin(int);
+	int getbegin();
+	void end(int);
+	int getend();
+	int range();
+	void show(ostream& = cout);
 };
 
 #endif

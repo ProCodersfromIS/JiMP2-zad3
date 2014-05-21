@@ -3,6 +3,6 @@
 
 class genM {
 public:
-	void virtual generate(int) = 0;
+	void virtual generate() = 0;
 };
 #endif
