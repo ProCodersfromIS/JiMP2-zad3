@@ -6,13 +6,10 @@ using namespace std;
 
 genM::genM(){}
 genM::genM(int _b, int _e){
-	begin(_b);
-	end(_e);
+	this->begin(_b);
+	this->end(_e);
 }
 genM::~genM(){}
-void genM::generate(){
-	val = (rand() % range()) + b;
-}
 int genM::getval(){
 	return val;
 }
@@ -38,5 +35,5 @@ int genM::range(){
 	return e - b + 1;
 }
 void genM::show(ostream& output) {
-	output << getval();
+	output << this->getval();
 }
