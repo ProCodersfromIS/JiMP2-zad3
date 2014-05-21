@@ -9,7 +9,8 @@ gen2::gen2(){}
 gen2::gen2(int _b, int _e) : genM(_b, _e) {
 	s = time(NULL);
 	s2 = time(NULL);
-
+	w1 = s;
+	w2 = s2;
 }
 gen2::~gen2(){}
 void gen2::seed2(int _s2){
@@ -19,8 +20,8 @@ int gen2::getseed2(){
 	return s2;
 }
 void gen2::generate(){
-	w1 = (48271 * s) % 2147483647UL;
-	w2 = (40692 * s2) % 2147483399UL;
+	w1 = (48271 * w1) % 2147483647UL;
+	w2 = (40692 * w2) % 2147483399UL;
 	val = ((w1 - w2) % 2147483647UL) % this->range() + b;
 }
 void gen2::pokaz(){
