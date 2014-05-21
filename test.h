@@ -7,6 +7,7 @@
 
 #ifndef test_H
 #define test_H
+// --------------
 
 #include <ostream>
 // -------------------------
@@ -14,6 +15,12 @@
 #include "genM.h"
 // -------------------------
 
+/**
+* \class test
+* \author Beata Gie³baga & Kamil Dawidów
+* \date 21.05.2014
+* \brief Klasa abstrakcyjna, s³u¿y do badania generatorów liczb losowych
+*/
 class test
 {
 protected:

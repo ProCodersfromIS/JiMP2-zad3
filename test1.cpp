@@ -38,7 +38,7 @@ void test1::startTest()
 
 void test1::view(ostream& output)
 {
-    output << "Wynik testu:\n  Ilosc liczb: " << numofvals <<
+    output << "Wynik testu 1:\n  Ilosc liczb: " << numofvals <<
         "\n  Ilosc liczb podzielnych przez 2: " << zeroes <<
         "\n  Ilosc liczb niepodzielnych przez 2: " << ones;
 }
