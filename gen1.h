@@ -9,7 +9,7 @@ class gen1 : public genM {
 	int val;
 public:
 	gen1();
-	gen1(int,int,int);
+	gen1(int,int);
 	~gen1();
 	void generate();
 	int getval();

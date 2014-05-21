@@ -5,14 +5,14 @@
 using namespace std;
 
 gen1::gen1(){}
-gen1::gen1(int _b, int _e,int _s){
+gen1::gen1(int _b, int _e){
 	begin(_b);
 	end(_e);
-	seed(_s);
+	seed(time(NULL));
+	srand(s);
 }
 gen1::~gen1(){}
 void gen1::generate(){
-	srand(s);
 	val = (rand() % range()) + b;
 }
 int gen1::getval(){
