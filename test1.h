@@ -1,11 +1,18 @@
 #ifndef TEST1_H
 #define TEST1_H
 
-class test1 : public test_parent
+#include "test.h"
+
+class test1 : public test
 {
 public:
-    test1();
-    ~test1();
+    // \brief Metoda czysto wirtualna uruchamiaj¹ca test
+    void startTest();
+
+    // \brief Metoda czysto wirtualna wypisuj¹ca wynik testu
+    //
+    // \param output - referencja do strumienia, na który zostanie wypisany wynik
+    void view(std::ostream& output);
 };
 
 #endif

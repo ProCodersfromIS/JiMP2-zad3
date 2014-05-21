@@ -1,11 +1,18 @@
+#include <iostream>
+// -----------------------------------------------
+
 #include "test1.h"
+// -----------------------------------------------
 
+using namespace std;
+//------------------------------------------------
 
-test1::test1()
+void test1::startTest()
 {
+
 }
 
-
-test1::~test1()
+void test1::view(ostream& output)
 {
+
 }

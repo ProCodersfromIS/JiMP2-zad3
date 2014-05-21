@@ -1,11 +1,18 @@
-#include "test3.h"
+#include <iostream>
+// -----------------------------------------------
 
+#include "test2.h"
+// -----------------------------------------------
 
-test3::test3()
+using namespace std;
+//------------------------------------------------
+
+void test2::startTest()
 {
+
 }
 
-
-test3::~test3()
+void test2::view(ostream& output)
 {
+
 }
