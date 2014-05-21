@@ -9,6 +9,15 @@ private:
     int zeroes; ///< Iloœæ liczb podzielnych przez 2
     int ones; ///< Iloœæ liczb niepodzielnych przez 2
 public:
+    // \brief Konstruktor bezparametrowy
+    test1();
+
+    // \brief Konstruktor parametrowy
+    //
+    // \param _genptr - wartoœæ któr¹ przyjmie pole genptr
+    // \param _numofvals - wartoœæ któr¹ przyjmie pole numofvals
+    test1(genM* _genptr, int _numofvals);
+
     // \brief Metoda czysto wirtualna uruchamiaj¹ca test
     void startTest();
 

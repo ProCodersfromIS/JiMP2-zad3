@@ -30,9 +30,6 @@ public:
     // \param _numofvals - wartoœæ któr¹ przyjmie pole numofvals
     test(genM* _genptr, int _numofvals);
 
-    // \brief Destruktor
-    //~test();
-
     // \brief Metoda ustawiaj¹ca generator
     // 
     // \param _genptr - nowa wartoœæ pola genptr
