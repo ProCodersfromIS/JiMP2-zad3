@@ -8,7 +8,6 @@ using namespace std;
 gen1::gen1(){}
 gen1::gen1(int _b, int _e): genM(_b, _e) {
 	s = time(NULL);
-	this->seed(s);
 	srand(s);
 }
 gen1::~gen1(){}
