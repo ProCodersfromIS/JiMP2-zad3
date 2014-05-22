@@ -8,8 +8,6 @@ class genM {
 protected:
 	int b, e, s;
 	int val;
-	void begin(int);
-	void end(int);
 
 public:
 	genM();
@@ -19,7 +17,9 @@ public:
 	int getval(); // zwraca wylosowana wartosc
 	void virtual seed(int); // ustawia ziarno
 	int getseed();
+	void begin(int);
 	int getbegin();
+	void end(int);
 	int getend(); // zwracaa koniec
 	int range(); // ustawia i zwraca zakres losowania
 	void show(ostream& = cout); // wyœwietla wartosc

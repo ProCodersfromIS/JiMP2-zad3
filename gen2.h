@@ -15,7 +15,6 @@ public:
 	void seed2(int);//ustawia drugie ziarno
 	int getseed2();
 	void generate();
-	void pokaz();
 
 };
 #endif

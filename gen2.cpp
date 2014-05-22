@@ -24,6 +24,3 @@ void gen2::generate(){
 	w2 = (40692 * w2) % 2147483399UL;
 	val = ((w1 - w2) % 2147483647UL) % this->range() + b;
 }
-void gen2::pokaz(){
-	cout << w1 << "  " << w2 << endl;
-}
