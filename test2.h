@@ -21,9 +21,9 @@
 class test2 : public test
 {
 private:
-    int mean; ///< œrednia wylosowanych wartoœci
+    long mean; ///< œrednia wylosowanych wartoœci
 public:
-    // \brief Metoda czysto wirtualna uruchamiaj¹ca test
+    // \brief Metoda uruchamiaj¹ca test
     void startTest();
 
     // \brief Konstruktor bezparametrowy
@@ -35,7 +35,7 @@ public:
     // \param _numofvals - wartoœæ któr¹ przyjmie pole numofvals
     test2(genM* _genptr, int _numofvals);
 
-    // \brief Metoda czysto wirtualna wypisuj¹ca wynik testu
+    // \brief Metoda wypisuj¹ca wynik testu
     //
     // \param output - referencja do strumienia, na który zostanie wypisany wynik
     void view(std::ostream& output);

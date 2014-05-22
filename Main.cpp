@@ -1,6 +1,5 @@
 #include <iostream>
-#include <time.h>
-#include <iomanip>
+#include <fstream>
 // ----------------------------------
 
 #include "test.h"
@@ -10,7 +9,7 @@
 #include "genM.h"
 #include "gen1.h"
 #include "gen2.h"
-//#include "gen3.h"
+#include "gen3.h"
 // ------------------------------------
 
 using namespace std;
@@ -20,70 +19,39 @@ void ftest(genM* genptr, test* testptr, int begin, int end, int numofvals);
 
 int main()
 {
-    //ustawienie przed pierwszym testem
-    genM* genptr = new gen1(0, 100000);
-    test* test1ptr = new test1(genptr, 10000);
-    test* test2ptr = new test2(genptr, 10000);
-    test* test3ptr = new test3(genptr, 10000);
+    genM* genptr[3] = { new gen1(0, 100), new gen2(0, 100), new gen3(0,100) };
+    test* testptr[3] = { new test1(genptr[0], 1000), new test2(genptr[1], 1000), new test3(genptr[2], 1000) };
+    ofstream result;
+    result.open("wynik.txt");
 
-    //test pierwszego generatora
-    cout << "Test pierwszego generatora\n" << endl;
+    //wypisanie 10 liczb z ka¿dego generatora
+    for (int j = 0; j < 3; ++j)
+    {
+        cout << "Generator no " << j + 1 << endl;
+        result << "Generator no " << j + 1 << endl;
+        for (int i = 0; i < 10; ++i)
+        {
+            genptr[j]->generate();
+            genptr[j]->show(cout);
+            genptr[j]->show(result);
+            cout << " ";
+            result << " ";
+        }
+        cout << endl;
+        result << endl;
+        genptr[j]->end(10000);
+    }
 
-    test1ptr->startTest();
-    test1ptr->view(cout);
-    cout << endl;
-
-    test2ptr->startTest();
-    test2ptr->view(cout);
-    cout << endl;
-
-    test3ptr->startTest();
-    test3ptr->view(cout);
-    cout << endl;
-
-    //przestawienie przed drugim testem
-    delete genptr;
-    genptr = new gen2(0, 100000);
-    test1ptr->setgen(genptr);
-    test2ptr->setgen(genptr);
-    test3ptr->setgen(genptr);
-
-    //test drugiego generatora
-    cout << "\nTest drugiego generatora\n" << endl;
-
-    test1ptr->startTest();
-    test1ptr->view(cout);
-    cout << endl;
-
-    test2ptr->startTest();
-    test2ptr->view(cout);
-    cout << endl;
-
-    test3ptr->startTest();
-    test3ptr->view(cout);
-    cout << endl;
-
-    /*
-    //przestawienie przed trzecim testem
-    delete genptr;
-    genptr = new gen3(0, 10000);
-    test1ptr->setgen(genptr);
-    test2ptr->setgen(genptr);
-    test3ptr->setgen(genptr);
-
-    //test trzeciego generatora
-    cout << "\nTest trzeciego generatora\n" << endl;
-
-    test1ptr->startTest();
-    test1ptr->view(cout);
-    cout << endl;
-
-    test2ptr->startTest();
-    test2ptr->view(cout);
-    cout << endl;
-
-    test3ptr->startTest();
-    test3ptr->view(cout);
-    cout << endl;
-    */
+    //w³aœciwe testy z wykorzystaniem klas testuj¹cych
+    cout << "\nTest generatorow:" << endl;
+    for (int i = 0; i < 3; ++i)
+    {
+        cout << "\nGenerator no " << i + 1 << endl;
+        for (int j = 0; j < 3; ++j)
+        {
+            testptr[j]->setgen(genptr[i]);
+            testptr[j]->startTest();
+            testptr[j]->view(cout);
+        }
+    }
 }

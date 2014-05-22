@@ -35,8 +35,8 @@ void test2::startTest()
 
 void test2::view(ostream& output)
 {
-    output << "Wynik testu 2:\n  Ilosc liczb: " << numofvals <<
+    output << "Wynik testu sredniej wartosci liczb" <<
         "\n  Srednia poczatku i konca zakresu: " << (genptr->getbegin() + genptr->getend())/2 <<
-        "\n  Srednia wylosowanych liczb: " << mean;
+        "\n  Srednia wylosowanych liczb: " << mean << "\n";
 }
 // ----------------------------------------------------------------------------

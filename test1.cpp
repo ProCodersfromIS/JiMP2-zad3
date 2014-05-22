@@ -38,8 +38,8 @@ void test1::startTest()
 
 void test1::view(ostream& output)
 {
-    output << "Wynik testu 1:\n  Ilosc liczb: " << numofvals <<
+    output << "Wynik testu postaci binarnej liczby" <<
         "\n  Ilosc liczb podzielnych przez 2: " << zeroes <<
-        "\n  Ilosc liczb niepodzielnych przez 2: " << ones;
+        "\n  Ilosc liczb niepodzielnych przez 2: " << ones << "\n";
 }
 // ----------------------------------------------------------------------------

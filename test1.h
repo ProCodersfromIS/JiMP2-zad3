@@ -33,10 +33,10 @@ public:
     // \param _numofvals - wartoœæ któr¹ przyjmie pole numofvals
     test1(genM* _genptr, int _numofvals);
 
-    // \brief Metoda czysto wirtualna uruchamiaj¹ca test
+    // \brief Metoda uruchamiaj¹ca test
     void startTest();
 
-    // \brief Metoda czysto wirtualna wypisuj¹ca wynik testu
+    // \brief Metoda wypisuj¹ca wynik testu
     //
     // \param output - referencja do strumienia, na który zostanie wypisany wynik
     void view(std::ostream& output);
