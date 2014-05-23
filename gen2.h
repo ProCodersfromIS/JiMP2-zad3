@@ -11,8 +11,8 @@ private:
 public:
 	gen2();
 	gen2(int, int); //poczatek,koniec, ziarno , ziarno1
-	~gen2();
-	void seed2(int);//ustawia drugie ziarno
+	~gen2(){}
+	void setseed2(int);//ustawia drugie ziarno
 	int getseed2();
 	void generate();
 

@@ -6,26 +6,26 @@ using namespace std;
 
 genM::genM(){}
 genM::genM(int _b, int _e){
-	this->begin(_b);
-	this->end(_e);
+	this->setbegin(_b);
+	this->setend(_e);
 }
 genM::~genM(){}
 int genM::getval(){
 	return val;
 }
-void genM::seed(int _s){
+void genM::setseed(int _s){
 	s = _s;
 }
 int genM::getseed(){
 	return s;
 }
-void genM::begin(int _b){
+void genM::setbegin(int _b){
 	b = _b;
 }
 int genM::getbegin(){
 	return b;
 }
-void genM::end(int _e){
+void genM::setend(int _e){
 	e = _e;
 }
 int genM::getend(){
@@ -36,4 +36,10 @@ int genM::range(){
 }
 void genM::show(ostream& output) {
 	output << this->getval();
+}
+void genM::getgenName(ostream& output){
+	output << endl << genName << endl;
+}
+char* genM::name(){
+	return genName;
 }

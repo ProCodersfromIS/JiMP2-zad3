@@ -8,6 +8,7 @@ class genM {
 protected:
 	int b, e, s;
 	int val;
+	char* genName;
 
 public:
 	genM();
@@ -15,13 +16,15 @@ public:
 	~genM();
 	void virtual generate() = 0;
 	int getval(); // zwraca wylosowana wartosc
-	void virtual seed(int); // ustawia ziarno
+	void virtual setseed(int); // ustawia ziarno
 	int getseed();
-	void begin(int);
+	void setbegin(int);
 	int getbegin();
-	void end(int);
+	void setend(int);
 	int getend(); // zwracaa koniec
 	int range(); // ustawia i zwraca zakres losowania
 	void show(ostream& = cout); // wyœwietla wartosc
+	void getgenName(ostream& = cout); //wyœwietla nazwe generatora
+	char* name();
 };
 #endif

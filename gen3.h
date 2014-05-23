@@ -4,17 +4,16 @@
 
 class gen3 : public genM {
 private:
-	int mod; //zmienne pomocnicze
-	int mult;
+	unsigned int state[624];
+	static int a;
+	void setgen();
+	void genstate();
 public:
 	gen3();
 	gen3(int, int);
-	~gen3();
+	~gen3(){}
 	void generate();
-	void model(int);
-	int getmodel();
-	void multiplier(int);
-	int getmultiplier();
+	void setseed2(int);
 };
 
 #endif
