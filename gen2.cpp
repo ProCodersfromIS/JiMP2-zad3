@@ -6,13 +6,14 @@
 using namespace std;
 
 gen2::gen2(){
-	genName = "Generator 3 - L'Ecuyer-Fishmana";
+	genName = "Generator 2 - L'Ecuyer-Fishmana";
 }
 gen2::gen2(int _b, int _e) : genM(_b, _e) {
 	s = time(NULL);
 	s2 = time(NULL);
 	w1 = s;
 	w2 = s2;
+    genName = "Generator 2 - L'Ecuyer-Fishmana";
 }
 void gen2::setseed2(int _s2){
 	s2 = _s2;

@@ -16,10 +16,13 @@
 * \class test3
 * \author Beata Gie³baga & Kamil Dawidów
 * \date 21.05.2014
-* \brief Klasa bada generatory liczb losowych poprzez porównanie œredniej wartoœci wylosowanych liczb ze œrodkiem dobranego przedzia³u z którego generator losuje liczbê
+* \brief Klasa bada generatory liczb losowych poprzez analizê iloœci zer i jedynek w postaci binarnej liczby
 */
 class test3 : public test
 {
+private:
+    long zeros; ///< iloœæ zer w sprawdzanych liczbach
+    long ones; ///< iloœæ jedynek w sprawdzanych liczbach
 public:
     // \brief Metoda uruchamiaj¹ca test
     void startTest();

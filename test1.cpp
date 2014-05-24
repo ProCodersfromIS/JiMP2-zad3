@@ -38,8 +38,8 @@ void test1::startTest()
 
 void test1::view(ostream& output)
 {
-    output << "Wynik testu postaci binarnej liczby" <<
-        "\n  Ilosc liczb podzielnych przez 2: " << zeroes <<
-        "\n  Ilosc liczb niepodzielnych przez 2: " << ones << "\n";
+    output << genptr->name() << ", test parzystosci liczb" <<
+        "\n  Ilosc liczb parzystych: " << zeroes <<
+        "\n  Ilosc liczb nieparzystych: " << ones << "\n";
 }
 // ----------------------------------------------------------------------------
