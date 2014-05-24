@@ -1,3 +1,10 @@
+/**
+* \file main.cpp
+* \author Kamil Dawidów
+* \date 21.05.2014
+* \brief Plik zawiera funkcjê main, wykorzystuj¹c¹ klasy testowe i generatorów
+*/
+
 #include <iostream>
 #include <fstream>
 #include <string>
@@ -16,11 +23,16 @@
 using namespace std;
 // -----------------------------------
 
-//funkcja pomocnicza wypisuj¹ca tego samego stringa na dwa strumienie
+// \brief funkcja pomocnicza wypisuj¹ca tego samego stringa na dwa strumienie
+//
+// \param _streamA - pierwszy strumieñ
+// \param _streamB - drugi strumieñ
+// \param tobeprinted - string, który zostanie wypisany na oba strumienie
 void write(ostream& _streamA, ostream& _streamB, string tobeprinted);
 
 int main()
 {
+    //inicjalizacja zmiennych i otworzenie pliku
     genM* genptr[3] = { new gen1(0, 100), new gen2(0, 100), new gen3(0,100) };
     test* testptr[3] = { new test1(genptr[0], 100000), new test2(genptr[1], 100000), new test3(genptr[2], 1000) };
     ofstream result;
@@ -57,6 +69,7 @@ int main()
         write(result, cout, "\n");
     }
 
+    //zamkniêcie pliku
     result.close();
 }
 

@@ -1,3 +1,10 @@
+/**
+* \file test1.cpp
+* \author Kamil Dawidów
+* \date 21.05.2014
+* \brief Plik zawiera definicje metod klasy test1
+*/
+
 #include <iostream>
 // -----------------------------------------------
 

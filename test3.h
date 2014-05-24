@@ -1,6 +1,6 @@
 /**
 * \file test3.h
-* \author Beata Gie³baga & Kamil Dawidów
+* \author Kamil Dawidów
 * \date 21.05.2014
 * \brief Plik zawiera deklaracjê klasy test3
 */
@@ -14,7 +14,7 @@
 
 /**
 * \class test3
-* \author Beata Gie³baga & Kamil Dawidów
+* \author Kamil Dawidów
 * \date 21.05.2014
 * \brief Klasa bada generatory liczb losowych poprzez analizê iloœci zer i jedynek w postaci binarnej liczby
 */

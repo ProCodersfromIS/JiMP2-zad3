@@ -1,6 +1,6 @@
 /**
 * \file test2.h
-* \author Beata Gie³baga & Kamil Dawidów
+* \author Kamil Dawidów
 * \date 21.05.2014
 * \brief Plik zawiera deklaracjê klasy test2
 */
@@ -14,7 +14,7 @@
 
 /**
 * \class test2
-* \author Beata Gie³baga & Kamil Dawidów
+* \author Kamil Dawidów
 * \date 21.05.2014
 * \brief Klasa bada generatory liczb losowych poprzez porównanie œredniej wartoœci wylosowanych liczb ze œrodkiem dobranego przedzia³u z którego generator losuje liczbê
 */
