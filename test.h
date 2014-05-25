@@ -5,8 +5,8 @@
 * \brief Plik zawiera deklaracjê klasy abstrakcyjnej test
 */
 
-#ifndef test_H
-#define test_H
+#ifndef TEST_H
+#define TEST_H
 // --------------
 
 #include <ostream>
