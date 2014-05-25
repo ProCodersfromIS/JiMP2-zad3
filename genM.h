@@ -2,7 +2,7 @@
 *\file genM.h
 *\author Beata Gie³baga
 *\date 23.05.2014
-*\brief Definicja klasy abstrakcyjnej genM
+*\brief Deklaracja klasy abstrakcyjnej genM
 */
 // -----------------------------------------------------------------------------
 

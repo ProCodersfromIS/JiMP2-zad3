@@ -2,7 +2,7 @@
 *\file gen2.h
 *\author Beata Gie³baga
 *\date 23.05.2014
-*\brief Definicja klasy gen2 - generator L'Ecuyer-Fishmana
+*\brief Deklaracja klasy gen2 - generator L'Ecuyer-Fishmana
 */
 // -----------------------------------------------------------------------------
 

@@ -2,7 +2,7 @@
 *\file gen1.h
 *\author Beata Gie³baga
 *\date 23.05.2014
-*\brief Definicja klasy gen1 - generator wbudowany
+*\brief Deklaracja klasy gen1 - generator wbudowany
 */
 // -----------------------------------------------------------------------------
 

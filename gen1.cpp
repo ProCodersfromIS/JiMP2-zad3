@@ -2,7 +2,7 @@
 *\file gen1.cpp
 *\author Beata Gie³baga
 *\date 23.05.2014
-*\brief Deklaracja klasy gen1 - generator wbudowany
+*\brief Definicja klasy gen1 - generator wbudowany
 */
 // -----------------------------------------------------------------------------
 

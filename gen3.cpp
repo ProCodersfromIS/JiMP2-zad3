@@ -2,7 +2,7 @@
 *\file gen3.cpp
 *\author Beata Gie³baga
 *\date 23.05.2014
-*\brief Deklaracja klasy gen3 - generator Mersenne Twister
+*\brief Definicja klasy gen3 - generator Mersenne Twister
 */
 // -----------------------------------------------------------------------------
 
