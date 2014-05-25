@@ -53,7 +53,7 @@ public:
     // \brief Metoda czysto wirtualna wypisuj¹ca wynik testu
     //
     // \param output - referencja do strumienia, na który zostanie wypisany wynik
-    virtual void view(std::ostream& output) = 0;
+    virtual void view(std::ostream& output = cout) = 0;
 };
 // -----------------------------------------------------------------------------------------------
 
