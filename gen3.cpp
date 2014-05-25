@@ -1,3 +1,11 @@
+/**
+*\file gen3.cpp
+*\author Beata Gie³baga
+*\date 23.05.2014
+*\brief Deklaracja klasy gen3 - generator Mersenne Twister
+*/
+// -----------------------------------------------------------------------------
+
 #include "genM.h"
 #include "gen3.h"
 #include "gen1.h"
@@ -6,6 +14,9 @@
 #include <time.h>
 
 using namespace std;
+
+// -----------------------------------------------------------------------------
+
 int gen3::a = 0;
 gen3::gen3() : genM(0,1) {
 	val = 0;
@@ -46,3 +57,4 @@ void gen3::setseed2(int _s){
 	s = _s;
 	setgen();
 }
+// -----------------------------------------------------------------------------

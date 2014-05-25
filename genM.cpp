@@ -1,8 +1,18 @@
+/**
+*\file genM.cpp
+*\author Beata Gie³baga
+*\date 23.05.2014
+*\brief Deklaracja klasy abstrakcyjnej genM
+*/
+// -----------------------------------------------------------------------------
+
 #include "genM.h"
 #include <iostream>
 #include <time.h>
 
 using namespace std;
+
+// -----------------------------------------------------------------------------
 
 genM::genM(){}
 genM::genM(int _b, int _e){
@@ -43,3 +53,4 @@ void genM::getgenName(ostream& output){
 char* genM::name(){
 	return genName;
 }
+// -----------------------------------------------------------------------------
